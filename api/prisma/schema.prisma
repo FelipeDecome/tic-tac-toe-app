@@ -12,7 +12,7 @@ datasource db {
 
 model Room {
   id   String @id @default(uuid())
-  code String
+  code String @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt()
