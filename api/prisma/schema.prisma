@@ -6,14 +6,16 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
 model Room {
   id   String @id @default(uuid())
-  code String @db.VarChar(6)
+  code String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt()
+
+  @@map("rooms")
 }
