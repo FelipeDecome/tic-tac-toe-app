@@ -1,13 +1,13 @@
 import { init } from '@paralleldrive/cuid2';
 import { Injectable } from '@nestjs/common';
-import { RoomRepository } from '../repository/implementations/prisma/roomRepository';
+import { IRoomRepository } from '../repository/interfaces/IRoomRepository';
 
 const createId = init({
   length: 6,
 });
 @Injectable()
 export class CreateRoomService {
-  constructor(private roomRepository: RoomRepository) {}
+  constructor(private roomRepository: IRoomRepository) {}
 
   async execute() {
     const code = createId();
