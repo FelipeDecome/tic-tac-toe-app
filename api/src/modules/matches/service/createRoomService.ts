@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { IRoomRepository } from '../repository/interfaces/IRoomRepository';
 
 const createId = init({
-  length: 6,
+  length: 8,
 });
 @Injectable()
 export class CreateRoomService {
