@@ -5,6 +5,7 @@ import { IRoomRepository } from '../repository/interfaces/IRoomRepository';
 const createId = init({
   length: 8,
 });
+
 @Injectable()
 export class CreateRoomService {
   constructor(private roomRepository: IRoomRepository) {}

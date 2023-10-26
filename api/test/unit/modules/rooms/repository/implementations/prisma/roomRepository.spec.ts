@@ -1,5 +1,5 @@
 import { Test } from '@nestjs/testing';
-import { RoomRepository } from '@modules/matches/repository/implementations/prisma/roomRepository';
+import { RoomRepository } from '@modules/rooms/repository/implementations/prisma/roomRepository';
 import { PrismaService } from '@shared/prisma/prismaService';
 
 describe('CreateRoomService', () => {

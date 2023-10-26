@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { CreateRoomService } from './createRoomService';
-import { MatchesRepositoryModule } from '../repository/repositoryModule';
+import { RoomsRepositoryModule } from '../repository/module';
 
 @Module({
-  imports: [MatchesRepositoryModule],
+  imports: [RoomsRepositoryModule],
   providers: [CreateRoomService],
   exports: [CreateRoomService],
 })
-export class MatchesServiceModule {}
+export class RoomsServiceModule {}
