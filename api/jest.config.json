@@ -13,6 +13,6 @@
   "clearMocks": true,
   "resetMocks": true,
   "coveragePathIgnorePatterns": ["/node_modules/"],
-  "coverageDirectory": "../coverage",
+  "coverageDirectory": "./coverage",
   "testEnvironment": "node"
 }
