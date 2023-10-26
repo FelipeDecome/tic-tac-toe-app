@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { EnvValidationException } from '../errors/envValidationException';
+import { EnvValidationException } from '../errors/envValidation.exception';
 
 const envVariablesSchema = z.object({
   PORT: z.coerce.number().default(3000),

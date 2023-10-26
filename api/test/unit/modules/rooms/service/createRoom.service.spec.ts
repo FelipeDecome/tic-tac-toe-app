@@ -1,5 +1,5 @@
-import { CreateRoomService } from '@modules/rooms/service/createRoomService';
-import { IRoomRepository } from '@modules/rooms/repository/interfaces/IRoomRepository';
+import { CreateRoomService } from '@modules/rooms/service/createRoom.service';
+import { IRoomRepository } from '@modules/rooms/repository/interfaces/IRoom.repository';
 import { Test } from '@nestjs/testing';
 
 describe('CreateRoomService', () => {

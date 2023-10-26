@@ -1,4 +1,4 @@
-import { ICreateRoomDTO } from '@modules/rooms/dtos/createRoom.dto';
+import { ICreateRoomDTO } from '@modules/rooms/dtos/ICreateRoom.dto';
 import { Room } from '@prisma/client';
 
 export abstract class IRoomRepository {

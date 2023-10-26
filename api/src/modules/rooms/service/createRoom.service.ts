@@ -1,6 +1,6 @@
 import { init } from '@paralleldrive/cuid2';
 import { Injectable } from '@nestjs/common';
-import { IRoomRepository } from '../repository/interfaces/IRoomRepository';
+import { IRoomRepository } from '../repository/interfaces/IRoom.repository';
 
 const createId = init({
   length: 8,

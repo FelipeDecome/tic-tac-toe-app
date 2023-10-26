@@ -1,6 +1,6 @@
 import { Controller, HttpStatus, Post, Res } from '@nestjs/common';
 import { Response } from 'express';
-import { CreateRoomService } from '../service/createRoomService';
+import { CreateRoomService } from '../service/createRoom.service';
 
 @Controller('room')
 export class RoomController {

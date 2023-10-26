@@ -1,7 +1,7 @@
-import { ICreateRoomDTO } from '@modules/rooms/dtos/createRoom.dto';
-import { IRoomRepository } from '../../interfaces/IRoomRepository';
+import { ICreateRoomDTO } from '@modules/rooms/dtos/ICreateRoom.dto';
+import { IRoomRepository } from '../../interfaces/IRoom.repository';
 import { Room } from '@prisma/client';
-import { PrismaService } from '@shared/prisma/prismaService';
+import { PrismaService } from '@shared/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
