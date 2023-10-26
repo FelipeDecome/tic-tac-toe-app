@@ -1,17 +1,16 @@
-import { init } from '@paralleldrive/cuid2';
 import { Injectable } from '@nestjs/common';
 import { IRoomRepository } from '../repository/interfaces/IRoom.repository';
-
-const createId = init({
-  length: 8,
-});
+import { ICUIDService } from '@shared/cuid/interface/ICUID.service';
 
 @Injectable()
 export class CreateRoomService {
-  constructor(private roomRepository: IRoomRepository) {}
+  constructor(
+    private roomRepository: IRoomRepository,
+    private cuidService: ICUIDService,
+  ) {}
 
   async execute() {
-    const code = createId();
+    const code = this.cuidService.generate({ length: 8 });
 
     const room = await this.roomRepository.create({
       code: code,
