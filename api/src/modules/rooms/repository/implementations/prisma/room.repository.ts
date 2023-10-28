@@ -1,8 +1,8 @@
 import { ICreateRoomDTO } from '@modules/rooms/dtos/ICreateRoom.dto';
-import { IRoomRepository } from '../../interfaces/IRoom.repository';
-import { Room } from '@prisma/client';
-import { PrismaService } from '@shared/prisma/prisma.service';
+import { Room } from '@modules/rooms/entities/room.entity';
 import { Injectable } from '@nestjs/common';
+import { PrismaService } from '@shared/prisma/prisma.service';
+import { IRoomRepository } from '../../interfaces/IRoom.repository';
 
 @Injectable()
 export class RoomRepository implements IRoomRepository {
