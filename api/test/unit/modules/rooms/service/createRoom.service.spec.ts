@@ -1,5 +1,5 @@
-import { CreateRoomService } from '@modules/rooms/service/createRoom.service';
 import { IRoomRepository } from '@modules/rooms/repository/interfaces/IRoom.repository';
+import { CreateRoomService } from '@modules/rooms/service/createRoom.service';
 import { Test } from '@nestjs/testing';
 import { ICUIDService } from '@shared/cuid/interface/ICUID.service';
 

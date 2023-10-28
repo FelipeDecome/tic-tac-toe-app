@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { IRoomRepository } from '../repository/interfaces/IRoom.repository';
 import { ICUIDService } from '@shared/cuid/interface/ICUID.service';
+import { IRoomRepository } from '../repository/interfaces/IRoom.repository';
 
 @Injectable()
 export class CreateRoomService {

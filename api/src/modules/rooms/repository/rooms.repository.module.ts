@@ -1,6 +1,6 @@
 import { Module, Provider } from '@nestjs/common';
-import { RoomRepository } from './implementations/prisma/room.repository';
 import { PrismaModule } from '@shared/prisma/prisma.module';
+import { RoomRepository } from './implementations/prisma/room.repository';
 import { IRoomRepository } from './interfaces/IRoom.repository';
 
 const providers: Provider[] = [

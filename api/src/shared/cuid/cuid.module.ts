@@ -1,6 +1,6 @@
 import { Module, Provider } from '@nestjs/common';
-import { ICUIDService } from './interface/ICUID.service';
 import { CUUID2Service } from './implementations/cuid2.service';
+import { ICUIDService } from './interface/ICUID.service';
 
 const providers: Provider[] = [
   {
